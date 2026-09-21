@@ -10,20 +10,40 @@
 
 # production
 /build
+/dist
 
-# misc
+# Vite
+.vite/
+.vite-cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
+
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+pnpm-debug.log*
 
-#amplify-do-not-edit-begin
+# Cache
+.turbo/
+.eslintcache
+
+# Amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/logs
@@ -31,8 +51,6 @@ amplify/mock-data
 amplify/backend/amplify-meta.json
 amplify/backend/.temp
 build/
-dist/
-node_modules/
 aws-exports.js
 awsconfiguration.json
 amplifyconfiguration.json
@@ -42,7 +60,8 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
 **.sample
-#amplify-do-not-edit-end
 
 # Local Netlify folder
 .netlify
+.netlify/
+
